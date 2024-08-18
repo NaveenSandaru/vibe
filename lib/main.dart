@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vibe/views/home.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,10 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: const Home(),
-      title: 'VIBE',
+      title: 'Vibe',
       theme: ThemeData(
           fontFamily: "regular",
           appBarTheme: const AppBarTheme(
